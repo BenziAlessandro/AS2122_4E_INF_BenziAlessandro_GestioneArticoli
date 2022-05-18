@@ -4,12 +4,24 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
     {
         public Form1()
         {
- 
+            InitializeComponent();
+
+            articoli = new Dictionary<string, Articolo>();
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (articoli.ContainsKey(txtCodice.Text))
+                articoli[txtCodice.Text] =
+                    new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaMisura.Text, txtPrezzo.Text);
+            else
+                articoli.add(txtCodice.Text,
+                    new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaMisura.Text, txtPrezzo.Text);
 
+            lblArticoliInseriti.Text = $"Articoli ({articoli.count})";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -39,12 +51,24 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
-
+            lstElenco.Items.Clear();
+            switch (cmbVisualizza.Text)
+            {
+                case "Visualizza articoli":
+                    foreach (KeyValuePair<string, Articolo> articolo in articoli)
+            }
+            break;
         }
 
         private void lstElenco_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string Item = lstElenco.SelectedItem.ToString();
+            int index = lstElenco.FindString(Item);
 
+            txtCodice.Text = articoli.ElementAt(index).Value.Codice;
+            txtDescrizione.Text = articoli.ElementAt(index).Value.Codice;
+            cmbUnitaMisura.Text = articoli.ElementAt(index).Value.Codice;
+            txtPrezzo.Text = articoli.ElementAt(index).Value.Codice;
         }
     }
 }

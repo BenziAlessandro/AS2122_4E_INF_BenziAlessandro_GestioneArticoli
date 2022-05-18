@@ -17,6 +17,13 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
         public string Descrizione { get { return descrizione; } }
         public string UnitaMisura { get { return unitaMisura; } }
         public string Prezzo { get { return Prezzo; } }
+    }
 
+    public Articolo (string codice, string descrizione, string unitaMisura, Double prezzo)
+    {
+        this.codice = codice;
+        this.descrizione = descrizione;
+        this.unitaMisura = unitaMisura;
+        this.prezzo = prezzo;
     }
 }

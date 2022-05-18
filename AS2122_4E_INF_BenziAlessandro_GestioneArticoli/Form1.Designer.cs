@@ -40,7 +40,7 @@
             this.cmbVisualizza = new System.Windows.Forms.ComboBox();
             this.lstElenco = new System.Windows.Forms.ListBox();
             this.btnVisualizza = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblArticoliInseriti = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -153,14 +153,14 @@
             this.btnVisualizza.UseVisualStyleBackColor = true;
             this.btnVisualizza.Click += new System.EventHandler(this.btnVisualizza_Click);
             // 
-            // label5
+            // lblArticoliInseriti
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(102, 361);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 15);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Articoli";
+            this.lblArticoliInseriti.AutoSize = true;
+            this.lblArticoliInseriti.Location = new System.Drawing.Point(102, 361);
+            this.lblArticoliInseriti.Name = "lblArticoliInseriti";
+            this.lblArticoliInseriti.Size = new System.Drawing.Size(45, 15);
+            this.lblArticoliInseriti.TabIndex = 12;
+            this.lblArticoliInseriti.Text = "Articoli";
             // 
             // groupBox1
             // 
@@ -186,7 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblArticoliInseriti);
             this.Controls.Add(this.btnVisualizza);
             this.Controls.Add(this.lstElenco);
             this.Controls.Add(this.cmbVisualizza);
@@ -213,7 +213,7 @@
         private ComboBox cmbVisualizza;
         private ListBox lstElenco;
         private Button btnVisualizza;
-        private Label label5;
+        private Label lblArticoliInseriti;
         private GroupBox groupBox1;
     }
 }
