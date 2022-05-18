@@ -6,11 +6,13 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
         {
             InitializeComponent();
 
+            //creazione dizionario articoli
             articoli = new Dictionary<string, Articolo>();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //aggiungi articoli all'elenco
             if (articoli.ContainsKey(txtCodice.Text))
                 articoli[txtCodice.Text] =
                     new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaMisura.Text, txtPrezzo.Text);
@@ -54,7 +56,7 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
                 case "Visualizza articoli":
                     foreach (KeyValuePair<string, Articolo> articolo in articoli)
                     {
-                        lstElenco.Items.Add(articolo.Value.ToString());
+                        lstElenco.Items.Add(articolo.Value.To());
                     }
                     break;
             }
@@ -65,6 +67,7 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
             string Item = lstElenco.SelectedItem.ToString();
             int index = lstElenco.FindString(Item);
 
+            //visualizza gli articoli nell'elenco
             txtCodice.Text = articoli.ElementAt(index).Value.Codice;
             txtDescrizione.Text = articoli.ElementAt(index).Value.Codice;
             cmbUnitaMisura.Text = articoli.ElementAt(index).Value.Codice;
