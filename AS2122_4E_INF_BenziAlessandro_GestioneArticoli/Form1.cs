@@ -4,7 +4,7 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
     {
         public Form1()
         {
-            InitializeComponent();
+ 
         }
 
         private void button1_Click(object sender, EventArgs e)
