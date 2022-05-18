@@ -7,9 +7,6 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
             InitializeComponent();
 
             articoli = new Dictionary<string, Articolo>();
-
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,8 +53,11 @@ namespace AS2122_4E_INF_BenziAlessandro_GestioneArticoli
             {
                 case "Visualizza articoli":
                     foreach (KeyValuePair<string, Articolo> articolo in articoli)
+                    {
+                        lstElenco.Items.Add(articolo.Value.ToString());
+                    }
+                    break;
             }
-            break;
         }
 
         private void lstElenco_SelectedIndexChanged(object sender, EventArgs e)

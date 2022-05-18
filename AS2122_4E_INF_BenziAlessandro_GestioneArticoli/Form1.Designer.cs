@@ -95,13 +95,18 @@
             // 
             this.txtCodice.Location = new System.Drawing.Point(131, 48);
             this.txtCodice.Name = "txtCodice";
-            this.txtCodice.Size = new System.Drawing.Size(100, 23);
+            this.txtCodice.Size = new System.Drawing.Size(121, 23);
             this.txtCodice.TabIndex = 5;
             this.txtCodice.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cmbUnitaMisura
             // 
             this.cmbUnitaMisura.FormattingEnabled = true;
+            this.cmbUnitaMisura.Items.AddRange(new object[] {
+            "NR",
+            "KG",
+            "Q",
+            "T"});
             this.cmbUnitaMisura.Location = new System.Drawing.Point(131, 126);
             this.cmbUnitaMisura.Name = "cmbUnitaMisura";
             this.cmbUnitaMisura.Size = new System.Drawing.Size(121, 23);
@@ -110,24 +115,24 @@
             // 
             // txtDescrizione
             // 
-            this.txtDescrizione.Location = new System.Drawing.Point(131, 84);
+            this.txtDescrizione.Location = new System.Drawing.Point(131, 89);
             this.txtDescrizione.Name = "txtDescrizione";
-            this.txtDescrizione.Size = new System.Drawing.Size(100, 23);
+            this.txtDescrizione.Size = new System.Drawing.Size(121, 23);
             this.txtDescrizione.TabIndex = 7;
             this.txtDescrizione.TextChanged += new System.EventHandler(this.txtDescrizione_TextChanged);
             // 
             // txtPrezzo
             // 
-            this.txtPrezzo.Location = new System.Drawing.Point(131, 172);
+            this.txtPrezzo.Location = new System.Drawing.Point(131, 175);
             this.txtPrezzo.Name = "txtPrezzo";
-            this.txtPrezzo.Size = new System.Drawing.Size(100, 23);
+            this.txtPrezzo.Size = new System.Drawing.Size(121, 23);
             this.txtPrezzo.TabIndex = 8;
             this.txtPrezzo.TextChanged += new System.EventHandler(this.txtPrezzo_TextChanged);
             // 
             // cmbVisualizza
             // 
             this.cmbVisualizza.FormattingEnabled = true;
-            this.cmbVisualizza.Location = new System.Drawing.Point(456, 69);
+            this.cmbVisualizza.Location = new System.Drawing.Point(456, 46);
             this.cmbVisualizza.Name = "cmbVisualizza";
             this.cmbVisualizza.Size = new System.Drawing.Size(143, 23);
             this.cmbVisualizza.TabIndex = 9;
@@ -137,15 +142,15 @@
             // 
             this.lstElenco.FormattingEnabled = true;
             this.lstElenco.ItemHeight = 15;
-            this.lstElenco.Location = new System.Drawing.Point(456, 117);
+            this.lstElenco.Location = new System.Drawing.Point(456, 87);
             this.lstElenco.Name = "lstElenco";
-            this.lstElenco.Size = new System.Drawing.Size(234, 259);
+            this.lstElenco.Size = new System.Drawing.Size(234, 349);
             this.lstElenco.TabIndex = 10;
             this.lstElenco.SelectedIndexChanged += new System.EventHandler(this.lstElenco_SelectedIndexChanged);
             // 
             // btnVisualizza
             // 
-            this.btnVisualizza.Location = new System.Drawing.Point(628, 69);
+            this.btnVisualizza.Location = new System.Drawing.Point(615, 46);
             this.btnVisualizza.Name = "btnVisualizza";
             this.btnVisualizza.Size = new System.Drawing.Size(75, 23);
             this.btnVisualizza.TabIndex = 11;
